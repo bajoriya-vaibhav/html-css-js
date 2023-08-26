@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      font-family:Calibri;
+    }
+    .flex{
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .game,.music,.tech{
+      padding: 10px 15px;
+      border:none;
+      background-color: black;
+      color: white;
+      border-radius: 5px;
+    }
+    .on{
+      background-color: #ddd;
+      color: black;
+    }
+  </style>
+  <script>
+    function turn(button){
+      const btn = document.querySelector(button);
+      if(!btn.classList.contains('on')){ let active = document.querySelectorAll('.on'); active.forEach(element=>{element.classList.remove('on');}) 
+      btn.classList.add('on');}
+      else btn.classList.remove('on');
+    }
+  </script>
+</head>
+<body>
+  <div class="flex">
+    <button class="game" onclick="turn('.game')">Gaming</button>
+    <button class="music" onclick="turn('.music')">Music</button>
+    <button class="tech" onclick="turn('.tech')">Tech</button>
+  </div>
+</body>
+</html>

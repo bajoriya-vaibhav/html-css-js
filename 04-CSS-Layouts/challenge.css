@@ -1,0 +1,104 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+article {
+  border: 5px solid black;
+  width: 850px;
+  margin: auto;
+}
+
+h1 {
+  margin: 0px;
+  font-size: 2em;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 5px;
+  position: relative;
+}
+
+h1::after {
+  content: "SALE";
+  padding: 10px 25px;
+  font-weight: bolder;
+  font-size: 10px;
+  letter-spacing: 0.1rem;
+  position: absolute;
+  background-color: red;
+  color: white;
+  top: -10px;
+  left: -50px;
+}
+
+img {
+  border-radius: 10px;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: large;
+}
+
+.color {
+  margin: 20px 0px;
+  /* display: inline-block; */
+}
+
+.color span {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin-left: 20px;
+}
+
+button {
+  font-size: larger;
+  border: none;
+  width: 100%;
+  padding: 15px;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+}
+
+.list {
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  border-top: 5px solid black;
+  background-color: white;
+  color: black;
+}
+
+/* layout */
+.container-1 {
+  box-sizing: border-box;
+  width: 30%;
+  float: left;
+}
+.container-2 {
+  box-sizing: border-box;
+  width: 40%;
+  float: left;
+  padding: 0px 20px;
+}
+
+.container-3 {
+  box-sizing: border-box;
+  width: 30%;
+  float: left;
+}
+
+button {
+  clear: both;
+}

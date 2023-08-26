@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo</title>
+  <script>
+    const todolist = [];
+
+    function remove(input,x){
+      {input.removeChild(document.querySelector('.a'))}
+    }
+    
+    function addtodo(){
+      const input = document.querySelector('.todo-1');
+      let element = {'name':input.children[1].value,'duedate':input.children[2].value}
+      // console.log(element.duedate);
+      todolist.push(element);
+      let str = `<p><span>${element.name}</span> <span>${element.duedate}</span> <button onclick = "">Delete</button></p>`
+      const todo = document.createElement('div');
+      todo.innerHTML=str;
+      todo.classList.add(`a`)
+      input.appendChild(todo);
+      // ${remove(input,'.a')}
+    }
+  </script>
+</head>
+<body>
+  <div class="todo-1">
+    <h1>Todo List 1</h1>
+    <input placeholder="todo name">
+    <input type="date">
+    <button onclick="addtodo()">Add</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+Cascading Style Sheet
+
+h1(selector){
+
+  color(property):blue(value);//declaration or style
+  text(parent)-align(child){property}:center(value);
+
+}
+this declaration block
+
+types-
+1.inline<open tag style="property:Value">content</open>
+2.internal style
+<head>
+  <style> property:value</style>
+</head>
+3.external css
+file-style.css
+tag/.class/#id/tag:psuedoclass{
+  property:value;
+}
+
+link for demo of all the properties-
+https://www.w3schools.com/cssref/playdemo.php?filename=playcss_text-overflow
+
+some most common style-
+
+1.color:blue,#0000ff,rgba(0,0,255,1),hsla(240,100%,50%,1)
+refer to hsl image in img folder
+hsl(hue, saturation, lightness,alpha)
+
+Saturation can be described as the intensity of a color.
+100% is pure color, no shades of gray.
+50% is 50% gray, but you can still see the color.
+0% is completely gray; you can no longer see the color.
+
+lightness- 100% is white 0% is black
+
+alpha- opacity
+
+
+2.font-
+font-size;font-weight;font-style;font-family
+(while using you will get the gasp of it)
+
+3.text-
+text-align;text-tranform;text-decoration;
+text-overflow:clip(overflow text will be disappeared)/ellipsis(overflow text will be displayed as ....)
+
+4.background-
+background-color:blue;
+background-image:url(");
+background-size: 100px 100px;//height width
+background-postion(-x/y): center/(top/bottom left/right)/( 0% 0% )/(50px 150px)
+background-repeat:no-repeat;
+background-attachment:fixed
+
+5.border:5px solid black
+6.margin:100px 200px 300px 400px(top right bottom left)
+margin:100px 200px(top and bottom has 100px while right+left has 200px)
+7.padding:same as above for margin
+8.height:10px & width:1.5rem (excluding the margin,border and padding)
+
+
+types of selector-
+
+1.tag{
+  property:value;
+}
+2. .class{
+  property:value;
+}
+3.#id{
+  ...
+}
+4tag childtag{
+  ..
+}
+5.tag:psuedoclass{
+  ...
+  //pseudoclasses are hover,visited,active(for links),first-child,last-child,nth-child,etc
+}
+6.tag1,tag2,tag3{
+  ...
+}
+
+Note-
+priority order-
+!important
+inline style
+id
+class pseudoclass
+tags
+*(universal tag)
+
+having same priority then the last one will be applied
+all are applied but the high priority one is considered
+
+
+blockline element-occupy all the space horizontally
+break the line at the end
+height width box-model is applied
+
+inline-occupy only the space required by content
+no line break
+heights, width, box-model not applied
+padding,margin applied only horizontally(left,right)
+inline tags- a,button,img,strong,span,em,etc
+
+
+*change inline to blockline(viceversa)
+display:block;(inline)
+
+Note-
+display:inline-block;
+make the tag inline but the box model properties can be applied
+
+
+

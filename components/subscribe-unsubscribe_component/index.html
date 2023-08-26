@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .sub{
+      background-color: rgb(25,25,25);
+      color: white;
+      padding: 10px 15px;
+      font-weight: bold;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+    .subscribed{
+      background-color:#ddd;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <h2>Youtube Subscribe Button</h2>
+  <button class="sub" onclick="
+    const b = document.querySelector('.sub');
+    if (b.innerHTML === 'subscribe'){
+      b.innerHTML='subscribed';
+      b.classList.add('subscribed');
+    }
+    else {
+      b.innerHTML='subscribe';
+      b.classList.remove('subscribed');
+    }"
+    >subscribe</button>
+</body>
+</html>

@@ -1,0 +1,29 @@
+HyperTextMarkupLanduage
+
+<open tag>content or child tags<close tag> 
+
+<doctype !HTML> gives the brower idea that it is a HTML document
+<html lang="en"> to give language</html>
+<meta>tag for giving the webpage description like charset="UTF-8"
+<h>for heading</h>
+<p>for para</p>
+<img src="url" alt="" height="" widht="">
+<a href="url" alt="" target="_blank/_self/_parent/_top>inline tag generate the hyperlink</a>
+//if we want the link to same page use "#"
+<ol>orderedlist
+  <li>list element</li>
+</ol>
+<ul>unordered list</ul>
+<strong><b>used for bolding</b></strong>
+<em><i>italicize</i></em>
+<div>block line conatiner/division</div>
+<span>inline container</span>
+
+
+semantic html
+
+<header>top part of the page</header>
+<nav>navigation bar</nav>
+<main>main part of the body</main>
+<aside>side/addition text/part of the page</aside>
+<aritcle>block of data/product in page</aritcle>
